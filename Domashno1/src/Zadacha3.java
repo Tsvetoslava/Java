@@ -1,0 +1,47 @@
+import java.util.Scanner;
+
+
+public class Zadacha3 {
+public static void main(String[] args) {
+		
+		System.out.println("Informaciq za slujitel");
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.println("Vuvedi ime");
+		String ime=sc.nextLine();
+		System.out.println("Vuvedi familiq");
+		String familia=sc.nextLine();
+		System.out.println("Vuvedi godini");
+		byte godini=sc.nextByte();
+		System.out.println("POL:");
+		
+		char p=sc.next().charAt(0);
+		System.out.println("Vuvedi EGN:");
+		String egn=sc.next();
+		System.out.println("Vuvedi tel. nomer:");
+		String tel=sc.next();
+		
+		
+		System.out.println("Ime: "+ime);
+		System.out.println("Familia :"+familia);
+		if(godini<0 || godini>120){
+			System.out.println("Error");
+		}
+		else{
+			System.out.println("Godini: "+godini);
+		}
+		
+		
+		
+		
+		if(p!='м' && p!='М' &&  p!='ж' && p!='Ж'){
+			System.out.println("error");
+		}
+		else{
+			System.out.println("Пол: "+p);
+		}
+		
+		System.out.println("EGN: "+egn);
+		System.out.println("Telefonen nomer: "+tel);
+	}
+}

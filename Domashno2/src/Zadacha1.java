@@ -8,17 +8,17 @@ public class Zadacha1 {
 Scanner sc=new Scanner(System.in);
 		
 	
-	int a;
-	int b;
+	int number1;
+	int number2;
 	
-		System.out.println("Vuvedi 1 chislo a:");
-		 a=sc.nextInt();
+		System.out.println("Vuvedi purvo chislo :");
+		 number1=sc.nextInt();
 		System.out.println("Vuvedi vtoro chislo :");
-		 b=sc.nextInt();
+		 number2=sc.nextInt();
 		
-		int counter=a;
-		System.out.println("Chislata ot a do b,koito se delqt na 3 sa: ");
-		for(counter=a;counter<=b;counter++){
+		
+		System.out.println("Chislata mejdu dvete cifri,koito se delqt na 3 sa: ");
+		for(int counter=number1;counter<=number2;counter++){
 			if(counter%3==0){
 			System.out.println(counter);
 			}

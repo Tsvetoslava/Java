@@ -1,0 +1,26 @@
+package Domashno3;
+
+import java.util.Scanner;
+
+public class ChetnoNechetno {
+
+	
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Vuvedi chislo");
+		int number=sc.nextInt();
+		print(number);
+	}
+	
+	public static void print(int number){
+		
+		if(number%2==0){
+			System.out.println("Chisloto e chetno");
+		}
+		else{
+			System.out.println("Chisloto e nechetno");
+		}
+		
+		
+	}
+}

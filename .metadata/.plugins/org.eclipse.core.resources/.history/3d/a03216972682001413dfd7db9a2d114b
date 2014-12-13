@@ -1,0 +1,36 @@
+package Domashno3;
+
+import java.util.concurrent.ForkJoinPool.ForkJoinWorkerThreadFactory;
+
+import javax.swing.text.StyledEditorKit.ForegroundAction;
+
+public class Upr1 {
+public static void main(String[] args) {
+	
+
+	String [][] menu=new String [][]{
+			
+			new String[] {" "," "," "},
+			new String[] {"","","","","",""},
+			new String[] {" "," "},
+			
+			
+	};
+	
+	
+	for(int i = 0; i < menu.length; i++) {
+		for (int j = 0; j < menu[i].length; j++) {
+					System.out.printf("%d ", menu[i][j]);
+				}
+				System.out.println();
+			}
+			
+			
+			
+	};
+	
+	
+	
+	
+}
+

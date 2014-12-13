@@ -1,0 +1,24 @@
+package Domashno3;
+
+import java.util.Scanner;
+
+public class Upr3 {
+public static void main(String[] args) {
+	
+	Scanner sc=new Scanner(System.in);
+	int number=sc.nextInt();
+	if(number>=10 && number<=30000){
+		rekursiq(number);
+	}
+	
+	
+	
+}
+
+
+public static void rekursiq(int number){
+	
+	
+	System.out.println(number);
+}
+}

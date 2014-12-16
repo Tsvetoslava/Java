@@ -1,0 +1,14 @@
+
+public class Controller {
+public static void main(String[] args) {
+	
+	Person p1=new Person("Ivan",30,"ivan@abv.bg");
+	Person p2=new Person("Maria",20,"mimi@abv.bg");
+	Person p3=new Person("Stoqn",40,"stdsf");
+	
+	
+	System.out.println(p1.toString());
+	System.out.println(p2.toString());
+	System.out.println(p3.toString());
+}
+}

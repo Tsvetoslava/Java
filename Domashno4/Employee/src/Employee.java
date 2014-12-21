@@ -1,0 +1,42 @@
+
+public class Employee {
+
+	
+	private double zaplata;
+	private int chasove;
+	
+	
+	public Employee(){
+	this.chasove=0;
+	this.zaplata=0.0;
+	}
+	
+	public Employee(int chasove,double zaplata){
+		this();
+		setChasove(chasove);
+		setZaplata(zaplata);
+	}
+
+
+	@Override
+	public String toString() {
+		return " chasove " + getChasove() + "  i zaplata "
+				+ getZaplata();
+	}
+
+	public int getChasove() {
+		return chasove;
+	}
+
+
+	public void setChasove(int chasove) {
+		this.chasove = chasove;
+	}
+	
+	public double getZaplata(){
+		return zaplata;
+	}
+	public void setZaplata(double zaplata){
+		this.zaplata=zaplata;
+	}
+}

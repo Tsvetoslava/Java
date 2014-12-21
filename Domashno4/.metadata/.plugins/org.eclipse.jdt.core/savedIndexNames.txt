@@ -1,0 +1,1 @@
+INDEX VERSION 1.127+C:\Git\Java\Domashno5\.metadata\.plugins\org.eclipse.jdt.core

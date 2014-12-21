@@ -1,0 +1,65 @@
+
+
+	public class Person {
+
+		private String name;
+		private int age;
+		private String email;
+		
+		
+		public Person() {
+			this.name="";
+			this.age=0;
+			this.email="";
+			
+		}
+		
+		
+			public Person(String name, int age, String email) throws Exception{
+			this();
+			setName(name);
+			setAge(age);
+			setEmail(email);
+		}
+		
+		@Override
+		public String toString() {
+			return "Person [getName()=" + getName() + ", getAge()=" + getAge()
+					+ ", getEmail()=" + getEmail() + "]";
+		}
+		public String getName() {
+			return name;
+		}
+		public void setName(String name) throws Exception{
+			if(name.length()>=3){
+			this.name = name;
+			}
+			else {
+				throw new Exception("Error");
+				
+			}
+			
+				}
+		public int getAge() {
+			return age;
+		}
+		public void setAge(int age) throws Exception{
+			if(age>=0 && age<201){
+				
+			this.age = age;
+			}
+		
+		}
+		public String getEmail() {
+			return email;
+		}
+		public void setEmail(String email) throws Exception{
+			if(email.length()>=3){
+				this.email = email;
+			}
+			
+		}
+
+		
+	}
+

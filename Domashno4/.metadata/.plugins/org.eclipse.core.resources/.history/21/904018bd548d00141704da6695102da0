@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+
+public class Cards {
+
+	public static void main(String[] args) {
+		
+		 Scanner scanner = new Scanner(System.in);
+	        System.out.println("Въведете Карта");
+
+	        String input = scanner.nextLine();
+
+	        String output = "Невалидна Карта";
+
+	        if (input.length() == 1) {
+
+	            char card = input.toUpperCase().charAt(0);
+
+	            switch(card){
+	                case '2':
+	                case '3':
+	                case '4':
+	                case '5':
+	                case '6':
+	                case '7':
+	                case '8':
+	                case '9':
+	                case 'J':
+	                case 'Q':
+	                case 'K':
+	                case 'A':
+	                
+	                    output = "Валидна Карта";
+	                    break;
+	                
+	            }
+	        }
+	}
+}
+
+

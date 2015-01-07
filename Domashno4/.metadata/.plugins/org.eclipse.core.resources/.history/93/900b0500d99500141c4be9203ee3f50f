@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+
+public class dumi {
+public static void main(String[] args) {
+	
+	
+	String[] array= new String[4];
+	Scanner sc=new Scanner(System.in);
+	for (int i = 0; i < array.length; i++) {
+		System.out.println("Vuvedi " + (i+1) + " duma");
+		String duma=sc.next();
+		array[i] = new String(duma);
+}
+
+	
+	
+	
+	for(int j=0;j<20;j++){
+		
+		for(int in=0;in<20;in++){
+			if (array[j].equals(array[in])){
+				 System.out.printf("\n Proverka=,%s	",array[j]);
+			}	
+}
+}
+}
+}

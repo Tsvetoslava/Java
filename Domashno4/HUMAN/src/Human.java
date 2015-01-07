@@ -1,6 +1,26 @@
 
-public class Human {
-public static void main(String[] args) {
-	System.out.println("fss");
-}
+public abstract class Human {
+
+	
+	protected String name;
+	
+	
+	public Human(){
+		this.name="";
+	}
+	
+	public Human(String name){
+		setName(name);
+	}
+	
+	
+	public String getName(){
+		return name;
+	}
+	
+	public void setName(String name){
+		this.name=name;
+	}
+	public abstract void identify();
+	
 }

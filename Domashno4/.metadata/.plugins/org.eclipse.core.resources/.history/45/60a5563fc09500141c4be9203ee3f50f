@@ -1,0 +1,38 @@
+
+public class CarController {
+public static void main(String[] args) {
+	
+	Car[] array =new Car[10];
+	
+	array[0]=new SUV(true,7000);
+	array[1]=new SUV(false,5432);
+    array[2]=new SUV(true,54332);
+	array[3]=new SUV(false,63452);
+	array[4]=new SUV(true,53253);
+	array[5]=new Automobile(5,53253);
+	array[6]=new Automobile(6,45643);
+	array[7]=new Automobile(7,6544);
+	array[8]=new Automobile(4,6400);
+	array[9]=new Automobile(8,9766);
+	
+
+
+	for(int i=0; i<array.length; i++){
+		for(int m=i+1; m<array.length; m++){
+			if(array[i].price>array[m].price){
+				double swap=array[i].price;
+				array[i].price=array[m].price;
+				array[m].price=swap;
+				
+			}
+		}
+	}
+	
+			for(int sort=0; sort<array.length; sort++){
+	
+				System.out.println("Cars sorted by price: "+array[sort].price);
+				
+			}
+	}
+}
+

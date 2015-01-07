@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Fahrenheit&apos; to &apos;Celsius&apos;&#x0D;&#x0A;- Original project: &apos;Fahrenheit&apos;&#x0D;&#x0A;- Original element: &apos;Fahrenheit&apos;&#x0D;&#x0A;- Renamed element: &apos;Celsius&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Fahrenheit&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{Fahrenheit.java[Fahrenheit" matchStrategy="1" name="Celsius" qualified="false" references="true" similarDeclarations="false" stamp="1419601156442" textual="false" version="1.0"/>
+</session>

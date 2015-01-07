@@ -51,8 +51,5 @@ public void setStock(Stock[] stock) {
 
 
 
-
-
-
 	
 }

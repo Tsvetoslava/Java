@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+
+public class Redica1 {
+public static void main(String[] args) {
+	
+	int[] array= new int[10];
+	Scanner sc=new Scanner(System.in);
+	int counter=1;
+	for (int i = 0; i < array.length; i++) {
+		System.out.println("Vuvedi " +counter +" duma: ");
+		int number=sc.nextInt();
+		array[i] = (number);
+		counter++;
+
+
+
+}
+	for (int i : array) {
+		System.out.println(i);
+	}
+}
+}

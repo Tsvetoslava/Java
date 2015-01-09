@@ -15,7 +15,7 @@ public static void vuvejdane(int[] array){
 	Scanner sc=new Scanner(System.in);
 	int counter=1;
 	for (int i = 0; i < array.length; i++) {  
-		System.out.println("Vuvedi " +counter +" chislo: "); 
+		System.out.println("Vuvedi " +counter +" chislo: ");
 		int number=sc.nextInt();
 		array[i] = (number);
 		counter++;

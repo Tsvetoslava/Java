@@ -28,6 +28,8 @@ public static void main(String[] args) {
 		}
 	}
 	
+	
+	
 			for(int sort=0; sort<array.length; sort++){
 	
 				System.out.println("Sorted by price: "+array[sort].price);

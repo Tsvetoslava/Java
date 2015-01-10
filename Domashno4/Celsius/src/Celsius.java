@@ -16,6 +16,7 @@ public Celsius(double gradus) {
 
 
 
+
 public double getGradus() {
 	return gradus;
 }

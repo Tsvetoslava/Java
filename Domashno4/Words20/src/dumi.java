@@ -15,6 +15,7 @@ public class dumi {
 		counter++;
 }
 	
+	
 	 
 	for(int k=0; k<20; k++){
 		

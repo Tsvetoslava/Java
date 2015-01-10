@@ -10,6 +10,7 @@ public static void main(String[] args) {
 	Celsius c1=new Celsius(stoinost);
 	Celsius c2=new Celsius(9);
 	
+	
 	c1.printFahrenheit();
 	c2.printFahrenheit();
 }

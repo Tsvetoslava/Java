@@ -15,6 +15,7 @@ public class Automobile extends Car{
 		this.expense=expense;
 	}
 
+	
 	@Override
 	public String toString() {
 		return "Automobile [expense=" + this.expense + ", price=" + super.price + "]";

@@ -13,6 +13,7 @@ public class SUV extends Car{
 		this.isHigh=isHigh;
 	}
 
+	
 	@Override
 	public String toString() {
 		return "SUV [isHigh=" + this.isHigh + ", price=" + super.price + "]";

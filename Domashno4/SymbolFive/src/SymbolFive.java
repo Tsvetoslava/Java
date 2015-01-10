@@ -19,6 +19,7 @@ int counter=0;
 		}
 	
 	
+	
 
 	for (char c : arr) {
 		System.out.print(c);

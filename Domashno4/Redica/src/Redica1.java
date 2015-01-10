@@ -10,6 +10,7 @@ vuvejdane(array);
 	print(array);
 }
 
+
 public static void vuvejdane(int[] array){
 	
 	Scanner sc=new Scanner(System.in);

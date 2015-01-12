@@ -14,7 +14,7 @@ public class ArraySort {
 	int[]array=new int[n];
 	
 	for (int i = 0; i < n; i++) {
-		System.out.println("Vuvedi "+(i+1) +" chislo");
+		System.out.println("Vuvedi "+(i+1) +" chislo: ");
 		array[i]=sc.nextInt();
 	}
 	

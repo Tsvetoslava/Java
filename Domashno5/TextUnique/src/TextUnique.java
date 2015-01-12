@@ -1,6 +1,7 @@
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Scanner;
+import java.util.Set;
 
 
 public class TextUnique {
@@ -12,20 +13,27 @@ public static void main(String[] args) {
         String text = sc.nextLine();
         String[] words = text.split("\\W+");
        
-        System.out.println(words.length);
-    
-	
-	
-	HashSet<String> unikalnidumi=new HashSet<String>();
-	
-	
-		unikalnidumi.addAll(words);
-	
-	
-	
-	for(String dumi:unikalnidumi){
-		System.out.println(dumi);
-	}
 
+	
+    	HashMap<String, Integer> wordsCount = new HashMap<String, Integer>();
+		
+		for (String word : words) {
+			Integer count = wordsCount.get(word);
+			if (count == null) {
+				count = 0; 
+			}
+			wordsCount.put(word, count+1);
+		}
+		
+		
+		
+		
+		Set<String> wordKeys = wordsCount.keySet();
+		
+		for (String word : wordKeys) {
+			int count = wordsCount.get(word);
+			if(count==1){
+			System.out.printf(word+" ");
+		}	}
 }
 }

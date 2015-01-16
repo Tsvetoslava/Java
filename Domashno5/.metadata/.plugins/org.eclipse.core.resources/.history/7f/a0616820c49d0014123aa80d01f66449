@@ -1,0 +1,60 @@
+import java.util.ArrayList;
+
+
+public class CompanyController {
+public static void main(String[] args) {
+	
+	
+	
+	
+	Company c1 = new Company("Credissimo", null, null, 654);
+	Company c2 = new Company("Vivacom","Sofia",null, 35785 );
+	Company c3 = new Company("Telenor","Sofia",null, 27000 );
+	ArrayList<Company> companies = new ArrayList<Company>();
+	
+	
+	
+	companies.add(c1);
+	companies.add(c2);
+	companies.add(c3);
+	int maxEmp = 0;
+	int indexMax = 0;
+	
+	
+	
+	for(int i = 0; i < companies.size(); i++)
+	{
+		if(companies.get(i).getCountEmployee()> maxEmp)
+		{	indexMax = i;
+			maxEmp = companies.get(i).getCountEmployee();
+		}
+	}
+	
+	 companies.remove(indexMax);
+	 Company c4 = new Company("Mtel","Sofia",null, 654 );
+	 Company c5 = new Company("Vivus","Sofia",null, 2020);
+	 companies.add(c4);
+	 companies.add(c5);
+	 int maxNameLength = 0;
+	 int indexMaxName = 0;
+	 for(int i = 0; i < companies.size(); i++)
+		{
+			if(companies.get(i).getName().length()> maxNameLength)
+			{	
+				indexMaxName=i;
+				maxNameLength = companies.get(i).getName().length();
+			}
+		}
+	
+	 
+	 companies.remove(indexMaxName);
+	 Company c6 = new Company("CashBox","DC",null, 4500  );
+	 companies.add(indexMaxName, c6);
+	 for (Company company : companies) {
+		System.out.println(company);
+	}
+}
+	
+
+	
+}

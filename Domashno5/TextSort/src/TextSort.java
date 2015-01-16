@@ -1,4 +1,6 @@
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Scanner;
@@ -17,19 +19,41 @@ public class TextSort {
 		       String[] words = text.split("\\W+");
 		      
 		       System.out.println(words.length);
+		  ArrayList<String> arrayL = new ArrayList<String>(Arrays.asList(words));
+		  
+		  Collections.sort(arrayL);
+			
+	
+
+	    	HashMap<String, Integer> wordsCount = new HashMap<String, Integer>();
+			
+	    	for(String string : arrayL)
+			{
+				if(wordsCount.get(string)==null)
+				{
+					wordsCount.put(string, 1);
+				}
 				
-		       Arrays.sort(words);
-			
-			HashSet<String> dumi= new HashSet<String>();
-			 Arrays.sort(words);
-			dumi.addAll(Arrays.asList(words)); 
-			
-			for(String word:dumi){
-				System.out.println(word);
+				else
+				{	
+					Integer count = wordsCount.get(string);
+					wordsCount.put(string, count+1);	
+		 		}
+				
 			}
 			
-
+			
+			
+	    	Set<String> wordKeys = wordsCount.keySet();
+			for (String word : wordKeys) 
+	{
+		int count = wordsCount.get(word);
+		if(count>=1)
+		{
+		System.out.printf("%s \n",  word);
 		}
 
+	}
 
+		}
 }

@@ -57,18 +57,19 @@ public static void play(String[] cards){
 	for (String karti : cards) {
 		Integer count = wordsCount.get(karti);
 		if (count == null) {
-			count = 0; 
+			count = 1; 
 		}
 		wordsCount.put(karti, count+1);
 	
-	if(count==1){
-	System.out.println(wordsCount+ " Igrachut ima chift");
-	}
-	else if(count==2){
-		System.out.println(wordsCount+ " Igrachut ima set");
+	if(count==4){
+	System.out.println(wordsCount+ " Igrachut ima kare"); break;
+	
 	}
 	else if(count==3){
-		System.out.println(wordsCount+ " Igrachut ima kare");
+		System.out.println(wordsCount+ " Igrachut ima set"); break;
+	}
+	else if(count==2){
+		System.out.println(wordsCount+ " Igrachut ima chift"); 
 	}
 }
 

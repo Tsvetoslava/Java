@@ -34,7 +34,7 @@ public class TextSort {
 	                if( arrayL.get( i ).equals( arrayL.get( j ) ) && count > 1 )
 	                	arrayL.remove( j );
 	            }
-	      
+	         //   System.out.printf( "%d\n", count );
 	            count = 0;
 	        }
 	    }

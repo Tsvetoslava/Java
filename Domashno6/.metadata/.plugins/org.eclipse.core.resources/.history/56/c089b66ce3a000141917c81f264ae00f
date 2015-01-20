@@ -1,0 +1,36 @@
+
+public class Text {
+
+
+	public static void main(String[] args) {
+		
+		String text="Az sum ivan.Moeto ime e ivan";
+		String word="ivan";
+		String sentence="Az sum ivan.";
+		
+		
+	//	String[] words = text.split(" ");
+		
+		
+//	for (String string : parts) {
+//		System.out.println(string);
+//	}
+		String[] words = sentence.split("\\s+");
+
+        for (int i = 0; i < words.length; i++) {
+
+            words[i] = words[i].replaceAll("[^\\w]", "");
+
+            String[] splitSentence = new String[0];
+
+            if (splitSentence[i].toLowerCase().contains(word.toLowerCase())) {
+
+                System.out.println("The sentence contains your word: "
+                        + splitSentence[i]);
+
+            }
+        }
+	}
+	
+
+}

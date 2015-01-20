@@ -1,0 +1,12 @@
+import java.util.Scanner;
+
+
+public class Uppercase {
+public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
+	System.out.println("Vuvedi duma: ");
+	String word=sc.next();
+	System.out.println("Vuvedi text: ");
+	String text=sc.nextLine();
+}
+}

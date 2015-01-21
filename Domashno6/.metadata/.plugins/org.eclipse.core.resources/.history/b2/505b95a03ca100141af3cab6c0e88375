@@ -19,7 +19,16 @@ public class Text {
 		for (int i = 0; i < parts.length; i++) {
 			int contains = parts[i].indexOf(word);
 			if(contains > 0){
-				System.out.println("Izrecheniqta s tazi duma sa:  "+parts[i]);
+				System.out.println(i);
+			}
+		}
+		
+		
+
+		for (String string : parts) {
+			int contains = string.indexOf(word);
+			if(contains > 0){
+				System.out.println(string);
 			}
 		}
 	}

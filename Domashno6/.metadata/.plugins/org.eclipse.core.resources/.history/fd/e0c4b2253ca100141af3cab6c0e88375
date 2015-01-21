@@ -1,0 +1,30 @@
+
+public class Text {
+
+
+	public static void main(String[] args) {
+		System.out.println("Vuvedi duma: ");
+		
+		String word="cecka";
+		System.out.println("Vuvedi text ");
+		String text="Az sum cecka.sfds.";
+
+		
+		String[] parts = text.split("\\.");
+		
+		
+		
+		
+//	for (String string : parts) {
+//		System.out.println(string);
+//	}
+		for (String string : parts) {
+			int contains = string.indexOf(word);
+			if(contains > 0){
+				System.out.println(string);
+			}
+		}
+	}
+		
+	
+}

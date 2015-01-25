@@ -1,0 +1,8 @@
+
+public class Addable {
+
+		
+		public void Add();
+		
+	}
+

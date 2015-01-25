@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Exception&apos; to &apos;NewException&apos;&#x0D;&#x0A;- Original project: &apos;Sellable&apos;&#x0D;&#x0A;- Original element: &apos;Exception&apos;&#x0D;&#x0A;- Renamed element: &apos;NewException&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Exception&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{Exception.java[Exception" matchStrategy="1" name="NewException" qualified="false" references="true" similarDeclarations="false" stamp="1422129622007" textual="false" version="1.0"/>
+</session>

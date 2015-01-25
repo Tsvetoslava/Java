@@ -1,0 +1,16 @@
+
+public class Exception {
+	public class ExceptionMessage extends NewException {
+
+	    private static final long message = 404;
+
+	    public ExceptionMessage() {
+	        super();
+	    }
+
+	    public ExceptionMessage(String message) {
+	        super(message);
+
+	    }
+	}
+}

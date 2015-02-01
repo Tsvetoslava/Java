@@ -1,7 +1,4 @@
-
 public interface Sellable {
 
-
-		public void Sell();
-	}
-
+	public void Sell();
+}

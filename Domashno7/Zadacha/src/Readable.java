@@ -1,7 +1,4 @@
-
 public interface Readable {
 
-		
-		public void Read();
-	}
-
+	public void Read();
+}

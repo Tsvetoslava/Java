@@ -1,23 +1,24 @@
+/*Направете програма, която приема 10 числа. 
+Подредете във възходящ ред всички четни числа
+в масив. Подредете всички нечетни числа в нискодящ ред в друг масив
+ */
+
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 import java.util.Stack;
 
-
 public class Numbers10 {
-	public static void main(String[] args) {
 
+	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		int number;
 		int[] array = new int[10];
 		int[] sortedArray = selectionSort(array);
-		Stack<Integer> nechetni = new Stack<Integer>();	
-		Queue<Integer> chetni=new LinkedList<Integer>();
-		
+		Stack<Integer> nechetni = new Stack<Integer>();
+		Queue<Integer> chetni = new LinkedList<Integer>();
 
-	
 		for (int i = 0; i < 10; i++) {
-
 			System.out.println("Vuvedi " + (i + 1) + " chislo: ");
 			number = input.nextInt();
 			array[i] = number;
@@ -31,28 +32,23 @@ public class Numbers10 {
 
 		input.close();
 
-
-		
 		for (int c : sortedArray) {
 			if (c % 2 == 0) {
 				chetni.add(c);
-				
 			} else if (c % 2 == 1) {
-		nechetni.push(c);
-					
-				
+				nechetni.push(c);
 			}
 		}
-		
+
 		System.out.println();
 		System.out.println("Chetni: ");
 		while (!chetni.isEmpty()) {
-		    System.out.print(chetni.remove()+" ");
+			System.out.print(chetni.remove() + " ");
 		}
 		System.out.println();
-	System.out.println("Nechetni: ");
+		System.out.println("Nechetni: ");
 		while (!nechetni.isEmpty()) {
-		    System.out.print(nechetni.pop()+" ");
+			System.out.print(nechetni.pop() + " ");
 		}
 	}
 
@@ -64,14 +60,10 @@ public class Numbers10 {
 					index = j;
 				}
 			}
-
 			int smallest = array[index];
 			array[index] = array[i];
 			array[i] = smallest;
 		}
 		return array;
-
 	}
 }
-
-

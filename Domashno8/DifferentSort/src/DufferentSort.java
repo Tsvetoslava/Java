@@ -1,14 +1,15 @@
+/*Направете програма която приема 10 числа и ги сортира
+Използвайте различни алгоритми за сортиране
+ */
 import java.util.Scanner;
 
-
 public class DufferentSort {
-	public static void main(String[] args) {
 
+	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		int number;
 		int[] array = new int[10];
 		int[] selectionSortedArr = selectionSort(array);
-
 
 		for (int i = 0; i < 10; i++) {
 
@@ -19,19 +20,18 @@ public class DufferentSort {
 
 		selectionSort(array);
 		System.out.print("SelectionSort: ");
+
 		for (int s : selectionSortedArr) {
 			System.out.print(s + " ");
 		}
 		System.out.println();
-		 MergeSort ms = new MergeSort();
-	        
-	        ms.sort(array);
-	        System.out.print("MergeSort");
-	        for(int i:array){
-	            System.out.print(i+" ");
-	    
-	        }
-	
+		MergeSort ms = new MergeSort();
+
+		ms.sort(array);
+		System.out.print("MergeSort");
+		for (int i : array) {
+			System.out.print(i + " ");
+		}
 	}
 
 	private static int[] selectionSort(int[] array) {
@@ -42,12 +42,10 @@ public class DufferentSort {
 					index = j;
 				}
 			}
-
 			int smallest = array[index];
 			array[index] = array[i];
 			array[i] = smallest;
 		}
 		return array;
-
 	}
 }

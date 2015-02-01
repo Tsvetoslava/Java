@@ -1,18 +1,16 @@
+/*Направете клас за пазарска кошника, който съдържа
+  налична сума пари и лист от Sellable елементи
+ */
 import java.math.BigDecimal;
 import java.util.ArrayList;
 
-
 public class ShoppingCart {
-	
-	   private BigDecimal money;
-	   protected ArrayList<Sellable> list = new ArrayList<Sellable>();
-	    
-	    
-	 public ShoppingCart() {
-			super();
-		
-		}
+	private BigDecimal money;
+	protected ArrayList<Sellable> list = new ArrayList<Sellable>();
 
+	public ShoppingCart() {
+		super();
+	}
 
 	public ShoppingCart(BigDecimal money, ArrayList<Sellable> list) {
 		super();
@@ -20,29 +18,25 @@ public class ShoppingCart {
 		setList(list);
 	}
 
-
 	public BigDecimal getMoney() {
 		return money;
 	}
-
 
 	public void setMoney(BigDecimal money) {
 		this.money = money;
 	}
 
-
 	public ArrayList<Sellable> getList() {
 		return list;
 	}
 
-
 	public void setList(ArrayList<Sellable> list) {
 		this.list = list;
 	}
-	public void sell(BigDecimal dollars) throws NewException{
-		if(this.money.compareTo(dollars) == -1){
+
+	public void sell(BigDecimal dollars) throws NewException {
+		if (this.money.compareTo(dollars) == -1) {
 			throw new NewException("Недостатъчна наличност");
 		}
 	}
-	
 }

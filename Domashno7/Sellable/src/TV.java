@@ -1,17 +1,16 @@
-
-public class TV implements Sellable{
-
+/*Направете класове за Телевизор, Мобилен телефон и Лаптоп,
+които имплементират интерфейса Sellable
+ */
+public class TV implements Sellable {
 	protected String name;
-    protected int money;
-    
+	protected int money;
+
 	public TV() {
-		
-		
+
 	}
 
-	public TV(String name,int money) {
-	
-		setName(name);
+	public TV(String name, int money) {
+        setName(name);
 		setMoney(money);
 	}
 
@@ -22,7 +21,6 @@ public class TV implements Sellable{
 	public void setName(String name) {
 		this.name = name;
 	}
-	
 
 	public double getMoney() {
 		return money;
@@ -35,6 +33,5 @@ public class TV implements Sellable{
 	@Override
 	public void sell() {
 		System.out.println(getMoney());
-		
 	}
 }

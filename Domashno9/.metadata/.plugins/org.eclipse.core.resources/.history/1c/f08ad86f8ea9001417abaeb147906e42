@@ -1,0 +1,26 @@
+
+public class Letters {
+public static void main(String[] args) {
+	
+	
+	String word="kola";
+	
+	
+	char[]symbol=word.toCharArray();
+	
+	for (int i = 0; i < symbol.length; i++) {
+			
+		System.out.printf("%s%n=nomer[%d] ", symbol[i],i);
+	}
+	
+	
+	
+//	System.out.printf("element[%d] = %s%n", index, array[index]);
+	
+	
+	
+	
+	
+	
+}
+}

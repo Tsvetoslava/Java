@@ -1,21 +1,21 @@
-
-public class Laptop implements Sellable{
-	
-	
+/*Направете класове за Телевизор, Мобилен телефон и Лаптоп,
+които имплементират интерфейса Sellable
+ */
+public class Laptop implements Sellable {
 	protected String name;
 	protected int money;
-public Laptop() {
+
+	public Laptop() {
 		super();
-		
 	}
 
-public Laptop(String name,int money) {
-		
+	public Laptop(String name, int money) {
+
 		setName(name);
 		setMoney(money);
 	}
 
-public String getName() {
+	public String getName() {
 		return name;
 	}
 
@@ -23,9 +23,7 @@ public String getName() {
 		this.name = name;
 	}
 
-
-
-public double getMoney() {
+	public double getMoney() {
 		return money;
 	}
 
@@ -33,12 +31,8 @@ public double getMoney() {
 		this.money = money;
 	}
 
-@Override
-public void sell() {
-	System.out.println(getMoney());
-	
-}
-
-
-
+	@Override
+	public void sell() {
+		System.out.println(getMoney());
+	}
 }

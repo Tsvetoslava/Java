@@ -1,0 +1,33 @@
+/*Направете програма, която приема 2 масива от конзолата
+ и извежда броя на съвпадащи числа
+ */
+
+
+import java.util.HashSet;
+
+public class Arrays {
+	public static void main(String[] args) {
+
+		int[] arr1 = { 4, 7, 78, 1, 9, 3, 6, };
+		int[] arr2 = { 7, 45, 23, 76, 56, 45, 89, 12, 3, 2, 78 };
+		int count = 0;
+		sravnenie(arr1, arr2, count);
+	}
+
+	public static void sravnenie(int[] arr1, int[] arr2, int count) {
+
+		for (int i = 0; i < arr2.length; i++) {
+			for (int j = 0; j < arr1.length; j++) {
+				if (arr1[j] == arr2[i]) {
+					count++;
+				}
+			}
+		}
+		System.out.println("Broqt na suvpadashtite chisla sa: " + count);
+
+	}
+
+		
+
+		
+}

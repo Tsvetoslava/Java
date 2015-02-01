@@ -1,0 +1,30 @@
+import java.util.ArrayList;
+
+
+public class Symbol {
+public static void main(String[] args) {
+	
+	
+	
+	String izraz="aaaagdfgggggvdfgvffffffgfdg";
+	 String str = "ttttttttttttthhhhhhhhhhhheeeeeeeeeessssssssssbbbbbblllluuuueeee";
+     
+	 
+	 
+     ArrayList<Character> arr = new ArrayList<Character>();
+
+     for (int i = 1; i < str.length(); i++) {
+         if (arr.contains(str.charAt(i))) {
+             continue;
+         }
+         arr.add(str.charAt(i));
+     }
+     for (int i = 0; i < arr.size(); i++) {
+         System.out.print(arr.get(i));
+     }
+	
+
+	
+	
+}
+}

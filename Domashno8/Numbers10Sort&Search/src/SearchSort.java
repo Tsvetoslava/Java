@@ -1,20 +1,23 @@
+/*Ќаправете програма ко€то приема масив от 10 числа.
+—лед това програмата приема 1 число.
+јко числото фигурира в масива изведете на екрана
+ следващото по големина число от подадените
+ */
+
 import java.util.Scanner;
 
-
 public class SearchSort {
-	public static void main(String[] args) {
 
+	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		int number;
 		int[] array = new int[10];
 
 		for (int i = 0; i < 10; i++) {
-
-			System.out.println("Vuvedi " + (i + 1)	+ " chislo: ");
+			System.out.println("Vuvedi " + (i + 1) + " chislo: ");
 			number = input.nextInt();
 			array[i] = number;
 		}
-
 		sort(array);
 		search(array);
 		input.close();
@@ -35,13 +38,10 @@ public class SearchSort {
 					swapped = true;
 				}
 			}
-
 		}
 		for (int i : array) {
-			System.out.print(i+" ");
-
+			System.out.print(i + " ");
 		}
-
 	}
 
 	private static void search(int array[]) {
@@ -70,7 +70,5 @@ public class SearchSort {
 		if (first > last) {
 			System.out.println("Error");
 		}
-
 	}
-
 }

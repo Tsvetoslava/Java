@@ -1,25 +1,29 @@
+/*Направете програма която чете от конзолата математически израз 
+и проверява дали са поставени правилно скобите за приоритет:
+ */
+
+import java.util.Scanner;
 
 public class Math {
-	public static void main(String[] args) {
-		String izraz = "4 * )(5 - 2) + 6/(2 * (2 + 15))";
 
-				
-		char[] arr = izraz.toCharArray();
-			int count=0;
-			for (char c : arr) {
-				if(c=='('){
-					count++;
-					
-				}
-				
-				else if(c==')'){
-					count--;	
-					if(count<0){
-						System.out.println("Nevaliden izraz");
-						break;
-					}	
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		String izraz = sc.nextLine();
+		char[] arrIzraz = izraz.toCharArray();
+		int count = 0;
+
+		for (char c : arrIzraz) {
+			if (c == '(') {
+				count++;
+			} else if (c == ')') {
+				count--;
+				if (count < 0) {
+					System.out.println("Nevaliden izraz");
+					break;
 				}
 			}
-			System.out.println(count);
-				}
+		}
+		System.out.println(count);
+	}
 }

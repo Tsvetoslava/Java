@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+
+public class ArrayK {
+public static void main(String[] args) {
+	
+	Scanner sc=new Scanner(System.in);
+	int[] arr = { 4, 3, 1, 4, 2, 5, 8};
+	int sum=sc.nextInt();
+
+	int currSum = 0;
+    for (int i = 0; i <arr.length; i++) {
+        currSum += arr[i];
+        if (currSum == sum) {
+            System.out.println("Number and index: " + arr[i] + " " + i);
+        } else if (currSum > sum) {
+            continue;
+        }
+        for (int j = i + 1; j < arr.length; j++) {
+            currSum += arr[j];
+            if (currSum == sum) {
+                System.out.println("First number, index and length: "
+                        + arr[i] + " " + i + " " + (j - i + 1));
+            } else if (currSum > sum) {
+                currSum = 0;
+                break;
+            }
+
+        }
+
+    }
+	
+	
+	
+	
+	
+	
+}
+}

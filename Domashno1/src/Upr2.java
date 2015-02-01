@@ -1,39 +1,34 @@
-import java.util.Scanner;
+/*Направете програма, която чете от конзолата 3 числа и извежда 
+ кое е най-голямото и кое е най-малкото число от трите
+ */
 
+import java.util.Scanner;
 
 public class Upr2 {
 
-	
 	public static void main(String[] args) {
-
-		Scanner sc=new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 		System.out.println("Vuvedete chislata");
-		int a=sc.nextInt();
-		int b=sc.nextInt();
-		int c=sc.nextInt();
-		
-		
+		int number1 = sc.nextInt();
+		int number2 = sc.nextInt();
+		int number3 = sc.nextInt();
+
 		System.out.println("Nai-golqmo");
-		if(a>b && a>c){
-			System.out.println(a);
+		if (number1 > number2 && number1 > number3) {
+			System.out.println(number1);
+		} else if (number2 > number1 && number2 > number3) {
+			System.out.println(number2);
+		} else {
+			System.out.println(number3);
 		}
-		else if(b>a&&b>c){
-			System.out.println(b);
-		}
-		else {
-			System.out.println(c);
-		}
-		
-		
+
 		System.out.println("nai-malko");
-		if(a<b && a<c){
-			System.out.println(a);
+		if (number1 < number2 && number1 < number3) {
+			System.out.println(number1);
+		} else if (number2 < number1 && number2 < number3) {
+			System.out.println(number2);
+		} else {
+			System.out.println(number3);
 		}
-		else if(b<a&&b<c){
-			System.out.println(b);
-		}
-		else {
-			System.out.println(c);
-	}
 	}
 }

@@ -1,8 +1,5 @@
-
 public interface Addable {
-	
-		
-		public void Add();
-		
-	
+
+	public void Add();
+
 }

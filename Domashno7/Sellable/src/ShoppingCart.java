@@ -1,5 +1,5 @@
-/*Направете клас за пазарска кошника, който съдържа
-  налична сума пари и лист от Sellable елементи
+/*РќР°РїСЂР°РІРµС‚Рµ РєР»Р°СЃ Р·Р° РїР°Р·Р°СЂСЃРєР° РєРѕС€РЅРёРєР°, РєРѕР№С‚Рѕ СЃСЉРґСЉСЂР¶Р°
+  РЅР°Р»РёС‡РЅР° СЃСѓРјР° РїР°СЂРё Рё Р»РёСЃС‚ РѕС‚ Sellable РµР»РµРјРµРЅС‚Рё
  */
 import java.math.BigDecimal;
 import java.util.ArrayList;
@@ -36,7 +36,7 @@ public class ShoppingCart {
 
 	public void sell(BigDecimal dollars) throws NewException {
 		if (this.money.compareTo(dollars) == -1) {
-			throw new NewException("Недостатъчна наличност");
+			throw new NewException("пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ");
 		}
 	}
 }

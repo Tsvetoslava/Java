@@ -1,12 +1,10 @@
-/*
- Направете програма, която приема текст, а след това дума и 
- принтира на екрана колко пъти се среща съответната дума
-
+/*РќР°РїСЂР°РІРµС‚Рµ РїСЂРѕРіСЂР°РјР°, РєРѕСЏС‚Рѕ РїСЂРёРµРјР° С‚РµРєСЃС‚, Р° СЃР»РµРґ С‚РѕРІР° РґСѓРјР° Рё 
+ РїСЂРёРЅС‚РёСЂР° РЅР° РµРєСЂР°РЅР° РєРѕР»РєРѕ РїСЉС‚Рё СЃРµ СЃСЂРµС‰Р° СЃСЉРѕС‚РІРµС‚РЅР°С‚Р° РґСѓРјР°
  */
 import java.util.Scanner;
 
 public class Counter {
-	
+
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Vuvedi duma: ");
@@ -22,5 +20,6 @@ public class Counter {
 			}
 		}
 		System.out.println("Dumata se sreshta: " + counter);
+		sc.close();
 	}
 }

@@ -1,6 +1,6 @@
-/*Направете програма, която приема 5 карти 
- от тестето за игра. Програмта трябва да извежда
- на екрана дали играчът има чифт, сет или каре.
+/*РќР°РїСЂР°РІРµС‚Рµ РїСЂРѕРіСЂР°РјР°, РєРѕСЏС‚Рѕ РїСЂРёРµРјР° 5 РєР°СЂС‚Рё 
+ РѕС‚ С‚РµСЃС‚РµС‚Рѕ Р·Р° РёРіСЂР°. РџСЂРѕРіСЂР°РјС‚Р° С‚СЂСЏР±РІР° РґР° РёР·РІРµР¶РґР°
+ РЅР° РµРєСЂР°РЅР° РґР°Р»Рё РёРіСЂР°С‡СЉС‚ РёРјР° С‡РёС„С‚, СЃРµС‚ РёР»Рё РєР°СЂРµ.
  */
 
 import java.util.HashMap;
@@ -11,13 +11,14 @@ public class Cards5 {
 	public static void main(String[] args) {
 		String[] cards = new String[5];
 		Scanner sc = new Scanner(System.in);
-		
+
 		for (int i = 0; i < cards.length; i++) {
 			System.out.println("Vuvedi " + (i + 1) + " karta");
 			cards[i] = sc.nextLine();
 		}
 		proverka(cards);
 		play(cards);
+		sc.close();
 	}
 
 	public static void proverka(String[] cards) {

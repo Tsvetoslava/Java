@@ -1,5 +1,5 @@
-/*Направете програма която приема 10 числа и ги сортира
-Използвайте различни алгоритми за сортиране
+/*РќР°РїСЂР°РІРµС‚Рµ РїСЂРѕРіСЂР°РјР° РєРѕСЏС‚Рѕ РїСЂРёРµРјР° 10 С‡РёСЃР»Р° Рё РіРё СЃРѕСЂС‚РёСЂР°
+РР·РїРѕР»Р·РІР°Р№С‚Рµ СЂР°Р·Р»РёС‡РЅРё Р°Р»РіРѕСЂРёС‚РјРё Р·Р° СЃРѕСЂС‚РёСЂР°РЅРµ
  */
 import java.util.Scanner;
 
@@ -31,7 +31,9 @@ public class DufferentSort {
 		System.out.print("MergeSort");
 		for (int i : array) {
 			System.out.print(i + " ");
+
 		}
+		input.close();
 	}
 
 	private static int[] selectionSort(int[] array) {

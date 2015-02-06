@@ -1,3 +1,4 @@
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.util.ArrayList;
@@ -21,7 +22,9 @@ public class StudentRead {
 				String[] red = line.split(" ");
 				Student current = new Student(red[0], red[1]);
 				System.out.println(current);
+
 			}
+
 			bufferedReader.close();
 
 		} catch (Exception e) {

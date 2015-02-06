@@ -1,7 +1,7 @@
+//РќР°РїСЂР°РІРµС‚Рµ РїСЂРѕРіСЂР°РјР° РєРѕСЏС‚Рѕ РїСЂРёРµРјР° 5 РїРѕР»РѕР¶РёС‚РµР»РЅРё С‡РёСЃР»Р° РѕС‚ РєРѕРЅР·РѕР»Р°С‚Р° Рё РЅР°РјРёСЂР° РЅР°Р№-РіРѕР»СЏРјРѕС‚Рѕ РѕС‚ С‚СЏС…
+
 import java.util.Scanner;
 
-/*Направете програма която приема 5 положителни числа от конзолата и намира най-голямото от тях
- */
 public class Numbers5 {
 
 	public static void main(String[] args) {
@@ -21,5 +21,7 @@ public class Numbers5 {
 			}
 		}
 		System.out.println("Nai-golqmoto chislo e:" + large);
+
+		sc.close();
 	}
 }

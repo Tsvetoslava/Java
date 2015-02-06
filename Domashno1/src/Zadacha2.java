@@ -1,5 +1,5 @@
-/* програма, която приема 3 цели числа. Изведете на конзолата
-дали може да бъде бъде образуван триъгълник с дължини на страните съответни 3 числа.
+/* РїСЂРѕРіСЂР°РјР°, РєРѕСЏС‚Рѕ РїСЂРёРµРјР° 3 С†РµР»Рё С‡РёСЃР»Р°. РР·РІРµРґРµС‚Рµ РЅР° РєРѕРЅР·РѕР»Р°С‚Р°
+РґР°Р»Рё РјРѕР¶Рµ РґР° Р±СЉРґРµ Р±СЉРґРµ РѕР±СЂР°Р·СѓРІР°РЅ С‚СЂРёСЉРіСЉР»РЅРёРє СЃ РґСЉР»Р¶РёРЅРё РЅР° СЃС‚СЂР°РЅРёС‚Рµ СЃСЉРѕС‚РІРµС‚РЅРё 3 С‡РёСЃР»Р°.
  */
 
 import java.util.Scanner;
@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Zadacha2 {
 
 	public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 
 		System.out.println("Vuvedi purvo chislo");
 		int number1 = sc.nextInt();
@@ -23,5 +23,6 @@ public class Zadacha2 {
 		} else {
 			System.out.println("Moje da bude obrazuvan takuv triugulnik");
 		}
+		sc.close();
 	}
 }

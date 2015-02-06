@@ -26,6 +26,7 @@ public class Upr1 {
 		interval(number2);
 		opstatuk(number1, number2);
 		logOperaciq(number1, number2);
+		sc.close();
 	}
 
 	public static void stringLength(String string) {

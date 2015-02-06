@@ -1,16 +1,16 @@
-/*  Компания се нуждае от система за съхранение на информация за служители. 
- *  Направете програма, която изисква следната информация: Име, Фамилия,
- *  Години (0, 120), пол (еднобуквен 'м' или 'ж'), ЕГН, телефон. Подберете
- *  подходящите типове данни и декларирайте нужните променливи. Прочетете
- *   от конзолата нужната иформация за служител и след това я изведете на конзолата
+/*  РљРѕРјРїР°РЅРёСЏ СЃРµ РЅСѓР¶РґР°Рµ РѕС‚ СЃРёСЃС‚РµРјР° Р·Р° СЃСЉС…СЂР°РЅРµРЅРёРµ РЅР° РёРЅС„РѕСЂРјР°С†РёСЏ Р·Р° СЃР»СѓР¶РёС‚РµР»Рё. 
+ *  РќР°РїСЂР°РІРµС‚Рµ РїСЂРѕРіСЂР°РјР°, РєРѕСЏС‚Рѕ РёР·РёСЃРєРІР° СЃР»РµРґРЅР°С‚Р° РёРЅС„РѕСЂРјР°С†РёСЏ: РРјРµ, Р¤Р°РјРёР»РёСЏ,
+ *  Р“РѕРґРёРЅРё (0, 120), РїРѕР» (РµРґРЅРѕР±СѓРєРІРµРЅ 'Рј' РёР»Рё 'Р¶'), Р•Р“Рќ, С‚РµР»РµС„РѕРЅ. РџРѕРґР±РµСЂРµС‚Рµ
+ *  РїРѕРґС…РѕРґСЏС‰РёС‚Рµ С‚РёРїРѕРІРµ РґР°РЅРЅРё Рё РґРµРєР»Р°СЂРёСЂР°Р№С‚Рµ РЅСѓР¶РЅРёС‚Рµ РїСЂРѕРјРµРЅР»РёРІРё. РџСЂРѕС‡РµС‚РµС‚Рµ
+ *   РѕС‚ РєРѕРЅР·РѕР»Р°С‚Р° РЅСѓР¶РЅР°С‚Р° РёС„РѕСЂРјР°С†РёСЏ Р·Р° СЃР»СѓР¶РёС‚РµР» Рё СЃР»РµРґ С‚РѕРІР° СЏ РёР·РІРµРґРµС‚Рµ РЅР° РєРѕРЅР·РѕР»Р°С‚Р°
  */
 
 import java.util.Scanner;
 
 public class Zadacha3 {
-	
+
 	public static void main(String[] args) {
-        System.out.println("Informaciq za slujitel");
+		System.out.println("Informaciq za slujitel");
 		Scanner sc = new Scanner(System.in);
 
 		System.out.println("Vuvedi ime");
@@ -20,7 +20,7 @@ public class Zadacha3 {
 		System.out.println("Vuvedi godini");
 		byte godini = sc.nextByte();
 		System.out.println("POL:");
-     	char p = sc.next().charAt(0);
+		char p = sc.next().charAt(0);
 		System.out.println("Vuvedi EGN:");
 		String egn = sc.next();
 		System.out.println("Vuvedi tel. nomer:");
@@ -34,13 +34,15 @@ public class Zadacha3 {
 			System.out.println("Godini: " + godini);
 		}
 
-		if (p != 'м' && p != 'М' && p != 'ж' && p != 'Ж') {
+		if (p != 'Р–' && p != 'Р¶' && p != 'Рј' && p != 'Рњ') {
 			System.out.println("error");
 		} else {
-			System.out.println("Пол: " + p);
+			System.out.println("РџРћР›: " + p);
 		}
 
 		System.out.println("EGN: " + egn);
 		System.out.println("Telefonen nomer: " + tel);
+
+		sc.close();
 	}
 }

@@ -12,7 +12,7 @@ public class Zadacha1 {
 		System.out.println("Programa za namirane na lice na pravougulnik");
 		System.out.println("Vuvedi duljina:");
 		float duljina = sc.nextFloat();
-        System.out.println("Vuvedete shirina:");
+		System.out.println("Vuvedete shirina:");
 		float shirina = sc.nextFloat();
 
 		float result = duljina * shirina;
@@ -21,5 +21,6 @@ public class Zadacha1 {
 		} else {
 			System.out.println("Error");
 		}
+		sc.close();
 	}
 }

@@ -3,7 +3,6 @@
  символ повтарящ се само веднъж:
  Пример:
 “gggggssssstttttsssssaaaaa"  “gsts".
-
  */
 
 import java.util.ArrayList;

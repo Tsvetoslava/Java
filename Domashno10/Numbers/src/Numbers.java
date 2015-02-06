@@ -1,12 +1,7 @@
-
 import java.awt.EventQueue;
-
 import javax.swing.JFrame;
-
 import java.awt.EventQueue;
-
 import javax.swing.JFrame;
-
 import java.awt.GridLayout;
 
 import javax.swing.JOptionPane;
@@ -16,9 +11,7 @@ import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.Color;
-
 import javax.swing.SwingConstants;
-
 import java.awt.Font;
 
 import javax.swing.JTextField;

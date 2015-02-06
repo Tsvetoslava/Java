@@ -6,7 +6,6 @@ public class StudentRead {
 	public static void main(String[] args) {
 		ArrayList<Student> student = new ArrayList<Student>();
 		readFile("C:\\students.txt", student);
-
 	}
 
 	public static void readFile(String path, ArrayList<Student> student) {

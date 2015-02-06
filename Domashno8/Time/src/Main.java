@@ -1,6 +1,6 @@
-/*Засичайки времето за изпълнение направете сравнение 
- * на изучените алогоритми като ги прилагате върху 
- * случайно ренерирани колекции от 1 000 000
+/*Р—Р°СЃРёС‡Р°Р№РєРё РІСЂРµРјРµС‚Рѕ Р·Р° РёР·РїСЉР»РЅРµРЅРёРµ РЅР°РїСЂР°РІРµС‚Рµ СЃСЂР°РІРЅРµРЅРёРµ 
+ * РЅР° РёР·СѓС‡РµРЅРёС‚Рµ Р°Р»РѕРіРѕСЂРёС‚РјРё РєР°С‚Рѕ РіРё РїСЂРёР»Р°РіР°С‚Рµ РІСЉСЂС…Сѓ 
+ * СЃР»СѓС‡Р°Р№РЅРѕ СЂРµРЅРµСЂРёСЂР°РЅРё РєРѕР»РµРєС†РёРё РѕС‚ 1 000 000
  */
 
 import java.util.Random;
@@ -22,22 +22,19 @@ public class Main {
 
 		MergeSort sorter = new MergeSort();
 
-		System.out.println("Стартиране на сортирането: ");
-
 		long startTime = System.currentTimeMillis();
 		sorter.sort(numbers);
 		long endTime = System.currentTimeMillis();
 		long totalTime = endTime - startTime;
 		float seconds = (float) totalTime / 1000;
-		System.out.println("Време за изпълнение s MergeSort" + seconds);
+		System.out.println("Zasichane na vremeto s MergeSort" + seconds);
 
 		long startTime2 = System.currentTimeMillis();
 		selectionSort(numbers);
 		long endTime2 = System.currentTimeMillis();
 		long totalTime2 = endTime2 - startTime2;
 		float seconds2 = (float) totalTime2 / 1000;
-		System.out.println("Време за изпълнение s SelectionSort" + seconds2);
-
+		System.out.println("Zasichane na vremeto sus SelectionSort" + seconds2);
 	}
 
 	private static int[] selectionSort(int numbers[]) {

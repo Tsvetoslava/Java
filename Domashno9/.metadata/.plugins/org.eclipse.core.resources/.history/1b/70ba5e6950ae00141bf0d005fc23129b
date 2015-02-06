@@ -1,0 +1,31 @@
+/*Направете програма която чете поредица от символи и
+ замества поредните повтарящи се символи със съответния 
+ символ повтарящ се само веднъж:
+ Пример:
+“gggggssssstttttsssssaaaaa"  “gsts".
+ */
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Symbol {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String izraz = sc.nextLine();
+		char[] izrazChar = izraz.toCharArray();
+         int count = 0;
+
+		for (int i = 1; i < izrazChar.length; i++) {
+			if (i - 1 == 0) {
+				System.out.print(izrazChar[0]);
+			}
+			if (izrazChar[i] == izrazChar[i - 1]) {
+				count++;
+			} else if (izrazChar[i] != izrazChar[i - 1]) {
+				System.out.print(izrazChar[i]);
+			}
+		}
+		System.out.println("\nNumber of serial repetitions is: " + count);
+	}
+}

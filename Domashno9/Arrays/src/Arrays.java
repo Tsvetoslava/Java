@@ -1,9 +1,6 @@
-/*Направете програма, която приема 2 масива от конзолата
- и извежда броя на съвпадащи числа
+/*РќР°РїСЂР°РІРµС‚Рµ РїСЂРѕРіСЂР°РјР°, РєРѕСЏС‚Рѕ РїСЂРёРµРјР° 2 РјР°СЃРёРІР° РѕС‚ РєРѕРЅР·РѕР»Р°С‚Р°
+ Рё РёР·РІРµР¶РґР° Р±СЂРѕСЏ РЅР° СЃСЉРІРїР°РґР°С‰Рё С‡РёСЃР»Р°
  */
-
-
-import java.util.HashSet;
 
 public class Arrays {
 	public static void main(String[] args) {
@@ -26,8 +23,4 @@ public class Arrays {
 		System.out.println("Broqt na suvpadashtite chisla sa: " + count);
 
 	}
-
-		
-
-		
 }

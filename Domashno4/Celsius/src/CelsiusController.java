@@ -1,4 +1,4 @@
-//Напрате клас който коквертира градуси от Целзии във Ференхайт
+//РќР°РїСЂР°С‚Рµ РєР»Р°СЃ РєРѕР№С‚Рѕ РєРѕРєРІРµСЂС‚РёСЂР° РіСЂР°РґСѓСЃРё РѕС‚ Р¦РµР»Р·РёРё РІСЉРІ Р¤РµСЂРµРЅС…Р°Р№С‚
 
 import java.util.Scanner;
 
@@ -13,5 +13,6 @@ public class CelsiusController {
 
 		celsius1.printFahrenheit();
 		celsius2.printFahrenheit();
+		sc.close();
 	}
 }

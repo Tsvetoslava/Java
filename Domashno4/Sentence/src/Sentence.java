@@ -1,4 +1,4 @@
-//Направете програма която приема изречение и брои колко думи има в него
+//РќР°РїСЂР°РІРµС‚Рµ РїСЂРѕРіСЂР°РјР° РєРѕСЏС‚Рѕ РїСЂРёРµРјР° РёР·СЂРµС‡РµРЅРёРµ Рё Р±СЂРѕРё РєРѕР»РєРѕ РґСѓРјРё РёРјР° РІ РЅРµРіРѕ
 import java.util.Scanner;
 
 public class Sentence {
@@ -18,5 +18,6 @@ public class Sentence {
 			}
 		}
 		System.out.println("Dumite v izrechenieto sa: " + count);
+		sc.close();
 	}
 }

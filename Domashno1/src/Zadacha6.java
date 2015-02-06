@@ -44,8 +44,6 @@ public class Zadacha6 {
 			}
 		} else {
 			System.out.println("Invalid card!");
-
 		}
-
 	}
 }

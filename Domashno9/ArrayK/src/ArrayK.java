@@ -8,29 +8,42 @@ import java.util.Scanner;
 public class ArrayK {
 
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		int[] arr = { 4, 3, 1, 4, 2, 5, 8 };
-		int k = sc.nextInt();
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Vuvedi 20 chisla v masiv: ");
+		int[] array = new int[20];
+		for (int i = 0; i < array.length; i++) {
+			array[i] = scan.nextInt();
+		}
+		System.out.println("Vuvedi chislo k, za da "
+				+ " dali ima redica, koqto suma e ravna na K");
+		int k = scan.nextInt();
+		scan.close();
 
+		ArrayK sumOfK = new ArrayK();
+		sumOfK.findTheSumOfK(array, k);
+	}
+
+	public void findTheSumOfK(int[] array, int numK) {
 		int sum = 0;
-		for (int i = 0; i < arr.length; i++) {
-			sum += arr[i];
-			if (sum == sum) {
-				System.out.println("Number and index: " + arr[i] + " " + i);
-			} else if (sum > sum) {
-				continue;
+		int start = 0;
+		for (int i = 0; i <= array.length; i++) {
+
+			while (sum > numK) {
+				sum = sum - array[start++];
 			}
-			for (int j = i + 1; j < arr.length; j++) {
-				sum += arr[j];
-				if (sum == sum) {
-					System.out.println("First number, index and length: "
-							+ arr[i] + " " + i + " " + (j - i + 1));
-				} else if (sum > sum) {
-					sum = 0;
-					break;
+			if (sum == numK) {
+				System.out.println(numK + " ima suvpadenie mejdu " + start
+						+ " i " + (i - 1));
+				System.out.print("Elementite sa: ");
+				for (int j = start; j <= i - 1; j++) {
+					System.out.print(" " + array[j]);
 				}
+				return;
+			}
+			if (i < array.length) {
+				sum = sum + array[i];
 			}
 		}
-
+		System.out.println("No subarray is found with sum equals to " + numK);
 	}
 }
